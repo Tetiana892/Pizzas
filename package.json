@@ -2,7 +2,7 @@
   "name": "pizzas",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Tetiana892.github.io/Pizzas/",
+  "homepage": "https://Tetiana892.github.io/pizzas/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
