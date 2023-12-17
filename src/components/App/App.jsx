@@ -1,6 +1,8 @@
 import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+
 import Header from 'components/Header/Header';
+import { Home } from '../../pages';
 
 import css from './App.module.css';
 
@@ -8,7 +10,11 @@ const App = () => {
   return (
     <div className={css.wrapper}>
       <Header />
-      <div className={css.content}></div>
+      <div className={css.content}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 };
