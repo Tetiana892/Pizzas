@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Categories, SortPopup, PizzaBlock, Skeleton } from 'components';
+import { Categories, SortPopup, PizzaBlock, Skeleton } from '../../components';
 import css from './Home.module.css';
 
-function Home() {
+const Home = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -34,6 +34,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;

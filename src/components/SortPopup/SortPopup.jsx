@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import css from './SortPopup.module.css';
 
-function SortPopup({ items }) {
+const SortPopup = ({ items }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const sortRef = useRef();
@@ -89,6 +89,6 @@ function SortPopup({ items }) {
       )}
     </div>
   );
-}
+};
 
 export default SortPopup;
