@@ -18,19 +18,21 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={css.container}>
-      <div className={css.contenttop}>
-        <Categories
-          // onClickItem={name => console.log(name)}
-          items={['Meat', 'Vegetarian', 'Grill', 'Sharp', 'Closed']}
-        />
-        <SortPopup items={['popularity', 'price', 'alphabet']} />
-      </div>
-      <h2 className={css.contenttitle}>All Pizzas</h2>
-      <div className={css.contentitems}>
-        {isLoading
-          ? [...new Array(8)].map((_, index) => <Skeleton key={index} />)
-          : items.map(obj => <PizzaBlock key={obj.id} {...obj} />)}
+    <div className={css.content}>
+      <div className={css.container}>
+        <div className={css.contenttop}>
+          <Categories
+            // onClickItem={name => console.log(name)}
+            items={['Meat', 'Vegetarian', 'Grill', 'Sharp', 'Closed']}
+          />
+          <SortPopup items={['popularity', 'price', 'alphabet']} />
+        </div>
+        <h2 className={css.contenttitle}>All Pizzas</h2>
+        <div className={css.contentitems}>
+          {isLoading
+            ? [...new Array(8)].map((_, index) => <Skeleton key={index} />)
+            : items.map(obj => <PizzaBlock key={obj.id} {...obj} />)}
+        </div>
       </div>
     </div>
   );
