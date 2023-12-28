@@ -21,7 +21,7 @@ const Home = () => {
     <div className={css.container}>
       <div className={css.contenttop}>
         <Categories
-          onClickItem={name => console.log(name)}
+          // onClickItem={name => console.log(name)}
           items={['Meat', 'Vegetarian', 'Grill', 'Sharp', 'Closed']}
         />
         <SortPopup items={['popularity', 'price', 'alphabet']} />
